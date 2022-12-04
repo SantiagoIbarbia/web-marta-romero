@@ -39,8 +39,8 @@
 					<span>Mundial Qatar 2022</span>
 				</div>
 			</div>
-			<div class="main-content">
-				<div class="content1">
+			<div class="main-content row">
+				<div class="content1 col-3">
 					<h1> Últimos resultados:</h1>
 					<ul class="list">
 						<li>
@@ -62,106 +62,103 @@
 						<p><a href="noticia1.html"><img src="images/results.jpg" alt="Cuadro de grupos" width="200px"></a></p>
 					</div>
 				</div>
-			</div>
-			<div class="content2">
-				<div class="main-formulary">
-					<h1>Registrate en PAP:</h1>
-					<form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
-						<div class="formulary">
-							<div class="row">
-								<div class="col">
-									<div id="name">
-										<p><label for="name">Nombre:</label></p>
-										<p><input type="text" id="name" name="name" maxlength="15" required></p>
+				<div class="content2 col-9">
+					<div class="main-formulary">
+						<h1>Registrate en PAP:</h1>
+						<form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+							<div class="formulary">
+								<div class="row">
+									<div class="col">
+										<div id="name">
+											<p><label for="name">Nombre:</label></p>
+											<p><input type="text" id="name" name="name" maxlength="15" required></p>
+										</div>
+									</div>
+									<div class="col">
+										<div class="surname">
+											<p><label for="surname">Apellidos:</label></p>
+											<p><input type="text" id="surname" name="surname" maxlength="15" required></p>
+										</div>
 									</div>
 								</div>
-								<div class="col">
-									<div class="surname">
-										<p><label for="surname">Apellidos:</label></p>
-										<p><input type="text" id="surname" name="surname" maxlength="15" required></p>
+								<div class="row">
+									<div class="col">
+										<div class="born">
+											<p><label>Fecha de nacimiento:</label></p>
+											<p><input type="date" name="date" max="2005-01-01" name="2022-12-31" required></p>
+										</div>
+									</div>
+									<div class="col">
+										<!-- <label for="sex">Sexo:</label> -->
+										<!-- <div class="gender switch-field"> -->
+											
+											<!-- <input type="radio" id="sex" name="gender" value="female" checked>Mujer</input> -->
+											<!-- <input type="radio" id="sex" name="gender" value="male">Hombre</input> -->
+										<!-- </div> -->
+										<span> Sexo: </span>
+										<div class="switch-field">
+											<input type="radio" id="radio-one" name="switch-one" value="woman" checked/>
+											<label for="radio-one">Mujer</label>
+											<input type="radio" id="radio-two" name="switch-one" value="man" />
+											<label for="radio-two">Hombre</label>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="row">
-								<div class="col">
-									<div class="born">
-										<p><label>Fecha de nacimiento:</label></p>
-										<p><input type="date" name="date" max="2005-01-01" name="2022-12-31" required></p>
+								<div class="row">
+									<div class="col">
+										<div class="email">
+											<p><label for="email">Correo electrónico:</label></p>
+											<p><input type="email" id="email" name="email" placeholder="email@email.com" required></p>
+										</div>
+									</div>
+									<div class="col">
+										<div class="password">
+											<p><label for="password">Contraseña:</label></p>
+											<p><input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8-10}"
+													title="Introduce una contraseña de mínimo 8 y máximo 10 letras" required
+													minlength="8" maxlength="10"></p>
+										</div>
 									</div>
 								</div>
-								<div class="col">
-									<!-- <label for="sex">Sexo:</label> -->
-									<!-- <div class="gender switch-field"> -->
-										
-										<!-- <input type="radio" id="sex" name="gender" value="female" checked>Mujer</input> -->
-										<!-- <input type="radio" id="sex" name="gender" value="male">Hombre</input> -->
-									<!-- </div> -->
-									<span> Sexo: </span>
-									<div class="switch-field">
-										<input type="radio" id="radio-one" name="switch-one" value="woman" checked/>
-										<label for="radio-one">Mujer</label>
-										<input type="radio" id="radio-two" name="switch-one" value="man" />
-										<label for="radio-two">Hombre</label>
-									</div>
+								
+								<div class="sports">
+									<p><label>Deportes de tu interés:</label></p>
+									<label class="sport-label btn btn-secondary">
+										<input type="checkbox" name="sports[]" value="Fútbol" autocomplete="off"> Fútbol </input>
+									</label>
+									<label class="sport-label btn btn-secondary">
+										<input type="checkbox" name="sports[]" value="Baloncesto" autocomplete="off"> Baloncesto </input>
+									</label>
+									<label class="sport-label btn btn-secondary">
+										<input type="checkbox" name="sports[]" value="Paddel" autocomplete="off"> Paddel </input>
+									</label>
+									<label class="sport-label btn btn-secondary">
+										<input type="checkbox" name="sports[]" value="Tennis" autocomplete="off"> Tennis </input>
+									</label>
+									<label class="sport-label btn btn-secondary">
+										<input type="checkbox" name="sports[]" value="Voleyball" autocomplete="off"> Voleyball </input>
+									</label>
+									<label class="sport-label btn btn-secondary">
+										<input type="checkbox" name="sports[]" value="Rugby" autocomplete="off"> Rugby </input>
+									</label>
+									<label class="sport-label btn btn-secondary">
+										<input type="checkbox" name="sports[]" value="Artes marciales" autocomplete="off"> Artes marciales </input>
+									</label>
+								</div>
+								
+								<div class="subscribe">
+										<input type="checkbox" value="Subscribe">
+										<label> Suscribirse para recibir todas las novedades</label>
+								</div>
+								<div>
+									<input  class="buttons" type="submit" value="Enviar">
+									<input class="buttons" type="reset" value="Borrar">
 								</div>
 							</div>
-							<div class="row">
-								<div class="col">
-									<div class="email">
-										<p><label for="email">Correo electrónico:</label></p>
-										<p><input type="email" id="email" name="email" placeholder="email@email.com" required></p>
-									</div>
-								</div>
-								<div class="col">
-									<div class="password">
-										<p><label for="password">Contraseña:</label></p>
-										<p><input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8-10}"
-												title="Introduce una contraseña de mínimo 8 y máximo 10 letras" required
-												minlength="8" maxlength="10"></p>
-									</div>
-								</div>
-							</div>
-							
-							<div class="sports">
-								<p><label>Deportes de tu interés:</label></p>
-								<label class="sport-label btn btn-secondary">
-									<input type="checkbox" name="sports[]" value="Fútbol" autocomplete="off"> Fútbol </input>
-								</label>
-								<label class="sport-label btn btn-secondary">
-									<input type="checkbox" name="sports[]" value="Baloncesto" autocomplete="off"> Baloncesto </input>
-								</label>
-								<label class="sport-label btn btn-secondary">
-									<input type="checkbox" name="sports[]" value="Paddel" autocomplete="off"> Paddel </input>
-								</label>
-								<label class="sport-label btn btn-secondary">
-									<input type="checkbox" name="sports[]" value="Tennis" autocomplete="off"> Tennis </input>
-								</label>
-								<label class="sport-label btn btn-secondary">
-									<input type="checkbox" name="sports[]" value="Voleyball" autocomplete="off"> Voleyball </input>
-								</label>
-								<label class="sport-label btn btn-secondary">
-									<input type="checkbox" name="sports[]" value="Rugby" autocomplete="off"> Rugby </input>
-								</label>
-								<label class="sport-label btn btn-secondary">
-									<input type="checkbox" name="sports[]" value="Artes marciales" autocomplete="off"> Artes marciales </input>
-								</label>
-							</div>
-							
-							<div class="subscribe">
-									<input type="checkbox" value="Subscribe">
-									<label> Suscribirse para recibir todas las novedades</label>
-							</div>
-							<div>
-								<input  class="buttons" type="submit" value="Enviar">
-								<input class="buttons" type="reset" value="Borrar">
-							</div>
-						</div>
-
-					</form>
+						</form>
+					</div>
 				</div>
 			</div>
-			
-
 		</div>
 		<div class="footer">
 			<span><i class="fa-regular fa-copyright"></i> DIARIO Partido a Partido, S.L.- Libertad 25 - 41940 Sevilla[España] - Designed by MRP</span>
