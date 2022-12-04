@@ -1,0 +1,359 @@
+/* .global-container { */
+    /* font-family: 'Chivo'; */
+    /* text-align: justify; */
+    /* background-color: white; */
+    /* background-image: url(../images/icon.png); */
+    /* background-repeat: no-repeat; */
+    /* background-position: right; */
+    /* background-attachment: fixed; */
+    /* background-size: 350px; */
+    /* margin: 10px; */
+/* } */
+
+
+.global-container {
+    font-family: 'Chivo';
+    text-align: justify;
+    background-color: white;
+    background-image: url(../images/fondo4.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-size: cover;
+    /* background-size: 350px; */
+    /* margin: 10px; */
+}
+.header {
+    font-family: 'Lobster Two';
+    text-align: center;
+    align-items: center;
+    height: 210px;
+}
+
+.title {
+    text-align: center;
+    align-items: center;
+    height: 160px;
+}
+
+.live {
+    display: inline-block;
+    width: 25%;
+    height: 5%;
+    vertical-align: top;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.live a {
+    /*Hay que llamar al a para que nos pueda modificar el enlace*/
+    font-size: 18px;
+    float: left;
+    border: none;
+    color: white;
+    padding: 5px;
+    background-color: #ee3d26;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 150px;
+}
+
+.image {
+    height: 5%;
+    /*Hemos de poner el display en cada una de las cajas que queremos que se modelen*/
+    display: inline-block;
+    /*Hemos de poner el width en cada una de las cajas que se van a ver afectadas*/
+    width: 33%;
+}
+
+.log {
+    display: inline-block;
+    width: 10%;
+    /*Alinia la caja con la de al lado*/
+    vertical-align: top;
+    margin-top: 15px;
+}
+
+.log a{
+    /**/
+    /*Tamaño caja*/
+    font-size: 18px;
+    /*Letra*/
+    color: white;
+    /*Relleno entre contenido y borde*/
+    padding: 5px;
+    /*Color de la caja*/
+    background-color: #63B0B3;
+    /*Caja esquinas redondas*/
+    border-radius: 10px;
+    /*Te cuenta que el tamaño se cuente desde el borde, pero seguira sumando el margin*/
+    box-sizing: border-box;
+    /*No tiene decoración por defecto que se le asigna a los enlaces*/
+    text-decoration: none;
+    /*min-width: 20%;Anchura min que ocupa la caja*/
+    margin: 5px;
+    padding: 2px 15px 2px 15px;
+    border: 6px solid #63B0B3;
+}
+
+.log a:hover {
+    background-color: #82b2b4;
+    border: 5px solid #82b2b4;
+    color: white;
+}
+
+.subtitle {
+    font-size: xx-large;
+    background-color: #CC3636;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.main-content {
+    display: inline-block;
+}
+
+.content1 li {
+    /*Quitar los puntos de la lista*/
+    list-style: none;
+}
+
+.content1 {
+    /*top, right, bottom, left*/
+    padding: 5px;
+    width: 330px;
+    display: inline-block;
+    margin: 10px 20px;
+    /*width style color*/
+    border: 2px solid #06283D;
+    font-size: 25px;
+}
+
+.content1 h1 {
+    color: #B73E3E;
+    font-size: xx-large;
+    margin: 10px 5px 5px 20px;
+}
+
+.content1 em {
+    color: #2f6d93;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.results {
+    margin-top: 50px;
+}
+
+.content1 a {
+    color: #B73E3E;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.content1 img {
+    margin-left: 22%;
+}
+
+.results a {
+    text-decoration: none;
+}
+
+.content2 {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+    margin: 20px 5px 20px 5px;
+    text-align: justify;
+    font-size: 20px;
+    text-decoration: none;
+    color: #06283D;
+}
+
+.content2 a {
+    text-decoration: none;
+    color: #06283D;
+}
+
+.news1 {
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+.news2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding-right: 200px;
+    border-bottom: #B73E3E solid;
+    border-top: #B73E3E solid;
+}
+
+.news3, .news4 {
+    /*Tienen que ser las clases especificas*/
+    display: inline-block;
+    width: 40%;
+    padding: 50px;
+    margin: 5px;
+}
+
+.news3 h1 a, .news4 h1 a{
+    font-size: 40px;
+} 
+
+.news_morata h1 {
+    color: #06283D;
+    font-size: 60px;
+}
+.morata_image{
+    text-align: center;
+}
+.content2 h1 {
+    color: #06283D;
+    font-size: 60px;
+}
+
+.content2 strong {
+    color: #164e71;
+    font-weight: bold;
+}
+
+.final {
+    display: inline;
+   
+}
+.third {
+    display: inline;
+    
+}
+.semi {
+    display: inline;
+    width: 50%;
+ 
+}
+.fourth {
+    width: 50%;
+}
+.eigth {
+width: 50%;
+}
+.group-stage {
+   width: 50%;
+}
+
+.video{
+    text-align: center;
+    width: 50;
+    margin: 5px;
+}
+
+.main-formulary{
+	padding: 15px 15px 15px 15px;
+	background-color: #ffffff;
+}
+.main-formulary h1{
+    font-size: xx-large;
+}
+
+/* .name, .surname, .born, .email, .password, .sports, .gender, .subscribe{ */
+    /* margin-top: 40px; */
+/* } */
+
+.buttons{
+    margin: 20px;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #ce4646;
+    border: 5px solid #ce4646;
+}
+
+.buttons :hover{
+    margin: 20px;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: #ce4646;
+    background-color: aliceblue;
+    border: 5px solid aliceblue;
+}
+
+.sport-label {
+	background-color: #63B0B3;
+}
+
+
+.footer {
+    font-size: 15px;
+    background-color: #ce4646;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+}
+
+.switch-field {
+	display: flex;
+	margin-bottom: 36px;
+	overflow: hidden;
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.switch-field label {
+	background-color: #e4e4e4;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: #6c757d;
+	box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
+
+
+
+@font-face {
+    font-family: 'Chivo';
+    src: url(../fonts/Chivo-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Lobster Two';
+    src: url(../fonts/LobsterTwo-Regular.ttf);
+}
+
+
