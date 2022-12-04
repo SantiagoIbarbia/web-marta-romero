@@ -40,26 +40,29 @@
 				</div>
 			</div>
 			<div class="main-content row">
-				<div class="content1 col-3">
-					<h1> Últimos resultados:</h1>
-					<ul class="list">
-						<li>
-							<p><em>Final</em></p>
-							<p>España 1 - Argentina 0</p>
-						</li>
-						<li>
-							<p><em>Tercer lugar</em></p>
-							<p>Alemania 1 - Brasil 2</p>
-						</li>
-						<li>
-							<p><em>Semifinales</em></p>
-							<p>España 2 - Alemania 0</p>
-							<p>Argentina 1 - Brasil 0</p>
-						</li>
-					</ul>
-					<div class="results">
-						<h1><a href="noticia1.html"><strong>Resultados:</strong></a></h1>
-						<p><a href="noticia1.html"><img src="images/results.jpg" alt="Cuadro de grupos" width="200px"></a></p>
+				<div class="left-bar col-3">
+					<div class="content-bar">
+						<h1> Últimos resultados:</h1>
+						<ul class="list">
+							<li>
+								<p><em>Final</em></p>
+								<p>España 1 - Argentina 0</p>
+							</li>
+							<li>
+								<p><em>Tercer lugar</em></p>
+								<p>Alemania 1 - Brasil 2</p>
+							</li>
+							<li>
+								<p><em>Semifinales</em></p>
+								<p>España 2 - Alemania 0</p>
+								<p>Argentina 1 - Brasil 0</p>
+							</li>
+						</ul>
+						<div class="results">
+							<h1><a href="noticia1.html"><strong>Resultados:</strong></a></h1>
+							<p><a href="noticia1.html"><img src="images/results.jpg" alt="Cuadro de grupos" width="200px"></a>
+							</p>
+						</div>
 					</div>
 				</div>
 				<div class="content2 col-9">
@@ -69,32 +72,20 @@
 							<div class="formulary">
 								<div class="row">
 									<div class="col">
-										<div id="name">
-											<p><label for="name">Nombre:</label></p>
-											<p><input type="text" id="name" name="name" maxlength="15" required></p>
+										<div class="form-input big">
+											<label for="name">Nombre:</label>
+											<input type="text" id="name" name="name" maxlength="15" required>
 										</div>
 									</div>
 									<div class="col">
-										<div class="surname">
-											<p><label for="surname">Apellidos:</label></p>
-											<p><input type="text" id="surname" name="surname" maxlength="15" required></p>
+										<div class="form-input big">
+											<label for="surname">Apellidos:</label>
+											<input type="text" id="surname" name="surname" maxlength="15" required>
 										</div>
 									</div>
 								</div>
-								<div class="row">
+								<div class="row">								
 									<div class="col">
-										<div class="born">
-											<p><label>Fecha de nacimiento:</label></p>
-											<p><input type="date" name="date" max="2005-01-01" name="2022-12-31" required></p>
-										</div>
-									</div>
-									<div class="col">
-										<!-- <label for="sex">Sexo:</label> -->
-										<!-- <div class="gender switch-field"> -->
-											
-											<!-- <input type="radio" id="sex" name="gender" value="female" checked>Mujer</input> -->
-											<!-- <input type="radio" id="sex" name="gender" value="male">Hombre</input> -->
-										<!-- </div> -->
 										<span> Sexo: </span>
 										<div class="switch-field">
 											<input type="radio" id="radio-one" name="switch-one" value="woman" checked/>
@@ -103,47 +94,64 @@
 											<label for="radio-two">Hombre</label>
 										</div>
 									</div>
+									<div class="col">
+										<div class="form-input">
+											<label>Fecha de nacimiento:</label>
+											<input type="date" name="date" max="2005-01-01" name="2022-12-31" required>
+										</div>
+									</div>
 								</div>
 								<div class="row">
 									<div class="col">
-										<div class="email">
-											<p><label for="email">Correo electrónico:</label></p>
-											<p><input type="email" id="email" name="email" placeholder="email@email.com" required></p>
+										<div class="form-input big">
+											<label for="email">Correo electrónico:</label>
+											<input type="email" id="email" name="email" placeholder="email@email.com" required>
 										</div>
 									</div>
 									<div class="col">
-										<div class="password">
-											<p><label for="password">Contraseña:</label></p>
-											<p><input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8-10}"
+										<div class="form-input">
+											<label for="password">Contraseña:</label>
+											<input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8-10}"
 													title="Introduce una contraseña de mínimo 8 y máximo 10 letras" required
-													minlength="8" maxlength="10"></p>
+													minlength="8" maxlength="10">
 										</div>
 									</div>
 								</div>
 								
 								<div class="sports">
-									<p><label>Deportes de tu interés:</label></p>
-									<label class="sport-label btn btn-secondary">
-										<input type="checkbox" name="sports[]" value="Fútbol" autocomplete="off"> Fútbol </input>
-									</label>
-									<label class="sport-label btn btn-secondary">
-										<input type="checkbox" name="sports[]" value="Baloncesto" autocomplete="off"> Baloncesto </input>
-									</label>
-									<label class="sport-label btn btn-secondary">
-										<input type="checkbox" name="sports[]" value="Paddel" autocomplete="off"> Paddel </input>
-									</label>
-									<label class="sport-label btn btn-secondary">
-										<input type="checkbox" name="sports[]" value="Tennis" autocomplete="off"> Tennis </input>
-									</label>
-									<label class="sport-label btn btn-secondary">
-										<input type="checkbox" name="sports[]" value="Voleyball" autocomplete="off"> Voleyball </input>
-									</label>
-									<label class="sport-label btn btn-secondary">
-										<input type="checkbox" name="sports[]" value="Rugby" autocomplete="off"> Rugby </input>
-									</label>
-									<label class="sport-label btn btn-secondary">
-										<input type="checkbox" name="sports[]" value="Artes marciales" autocomplete="off"> Artes marciales </input>
-									</label>
+									<p>
+										<label>Deportes de tu interés:</label>
+									</p>						
+									<ul class="ks-cboxtags">
+										<li>
+											<input type="checkbox" id="fut" value="futbol">
+											<label for="fut">Fútbol</label>
+										</li>
+										<li>
+											<input type="checkbox" id="bal" value="futbol">
+											<label for="bal">Baloncesto</label>
+										</li>
+										<li>
+											<input type="checkbox" id="ten" value="futbol">
+											<label for="ten">Tennis</label>
+										</li>
+										<li>
+											<input type="checkbox" id="pad" value="futbol">
+											<label for="pad">Paddel</label>
+										</li>
+										<li>
+											<input type="checkbox" id="vol" value="futbol">
+											<label for="vol">Voleyball</label>
+										</li>
+										<li>
+											<input type="checkbox" id="rug" value="futbol">
+											<label for="rug">Rugby</label>
+										</li>
+										<li>
+											<input type="checkbox" id="art" value="futbol">
+											<label for="art">Artes marciales</label>
+										</li>
+									</ul>
 								</div>
 								
 								<div class="subscribe">
@@ -158,10 +166,10 @@
 						</form>
 					</div>
 				</div>
+            </div>
+			<div class="footer">
+				<span><i class="fa-regular fa-copyright"></i> DIARIO Partido a Partido, S.L.- Libertad 25 - 41940 Sevilla[España] - Designed by MRP</span>
 			</div>
-		</div>
-		<div class="footer">
-			<span><i class="fa-regular fa-copyright"></i> DIARIO Partido a Partido, S.L.- Libertad 25 - 41940 Sevilla[España] - Designed by MRP</span>
 		</div>
 	</body>
 </html>
