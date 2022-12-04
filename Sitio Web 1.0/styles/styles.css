@@ -1,16 +1,3 @@
-/* .global-container { */
-    /* font-family: 'Chivo'; */
-    /* text-align: justify; */
-    /* background-color: white; */
-    /* background-image: url(../images/icon.png); */
-    /* background-repeat: no-repeat; */
-    /* background-position: right; */
-    /* background-attachment: fixed; */
-    /* background-size: 350px; */
-    /* margin: 10px; */
-/* } */
-
-
 .global-container {
     font-family: 'Chivo';
     text-align: justify;
@@ -18,10 +5,10 @@
     background-image: url(../images/fondo4.webp);
     background-repeat: no-repeat;
     background-position: center center;
-	background-size: cover;
-    /* background-size: 350px; */
-    /* margin: 10px; */
+    background-size: cover;
+
 }
+
 .header {
     font-family: 'Lobster Two';
     text-align: center;
@@ -30,66 +17,51 @@
 }
 
 .title {
-    text-align: center;
     align-items: center;
-    height: 160px;
+    height: 75%;
 }
 
 .live {
     display: inline-block;
-    width: 25%;
-    height: 5%;
-    vertical-align: top;
-    text-align: left;
-    margin-top: 15px;
+    width: 20%;
+    vertical-align: center;
 }
 
 .live a {
-    /*Hay que llamar al a para que nos pueda modificar el enlace*/
     font-size: 18px;
-    float: left;
-    border: none;
     color: white;
     padding: 5px;
     background-color: #ee3d26;
     border-radius: 10px;
+    box-sizing: border-box;
     text-decoration: none;
-    width: 150px;
+    margin: 5px;
+    padding: 2px 15px 2px 15px;
+    border: 6px solid #ee3d26;
 }
 
 .image {
-    height: 5%;
     /*Hemos de poner el display en cada una de las cajas que queremos que se modelen*/
     display: inline-block;
     /*Hemos de poner el width en cada una de las cajas que se van a ver afectadas*/
-    width: 33%;
+    width: 50%;
+    height: 5%;
 }
 
 .log {
     display: inline-block;
-    width: 10%;
     /*Alinia la caja con la de al lado*/
-    vertical-align: top;
-    margin-top: 15px;
+    vertical-align: center;
 }
 
-.log a{
-    /**/
-    /*Tamaño caja*/
+.log a {
     font-size: 18px;
-    /*Letra*/
     color: white;
-    /*Relleno entre contenido y borde*/
     padding: 5px;
-    /*Color de la caja*/
     background-color: #63B0B3;
-    /*Caja esquinas redondas*/
     border-radius: 10px;
-    /*Te cuenta que el tamaño se cuente desde el borde, pero seguira sumando el margin*/
     box-sizing: border-box;
-    /*No tiene decoración por defecto que se le asigna a los enlaces*/
     text-decoration: none;
-    /*min-width: 20%;Anchura min que ocupa la caja*/
     margin: 5px;
     padding: 2px 15px 2px 15px;
     border: 6px solid #63B0B3;
@@ -100,6 +72,7 @@
     border: 5px solid #82b2b4;
     color: white;
 }
+
 
 .subtitle {
     font-size: xx-large;
@@ -121,7 +94,7 @@
 .content1 {
     /*top, right, bottom, left*/
     padding: 5px;
-	background-color: #ffffff;
+    background-color: #ffffff;
     display: inline-block;
     /*width style color*/
     border: 2px solid #06283D;
@@ -191,7 +164,8 @@
     border-top: #B73E3E solid;
 }
 
-.news3, .news4 {
+.news3,
+.news4 {
     /*Tienen que ser las clases especificas*/
     display: inline-block;
     width: 40%;
@@ -199,17 +173,20 @@
     margin: 5px;
 }
 
-.news3 h1 a, .news4 h1 a{
+.news3 h1 a,
+.news4 h1 a {
     font-size: 40px;
-} 
+}
 
 .news_morata h1 {
     color: #06283D;
     font-size: 60px;
 }
-.morata_image{
+
+.morata_image {
     text-align: center;
 }
+
 .content2 h1 {
     color: #06283D;
     font-size: 60px;
@@ -222,46 +199,52 @@
 
 .final {
     display: inline;
-   
+
 }
+
 .third {
     display: inline;
-    
+
 }
+
 .semi {
     display: inline;
     width: 50%;
- 
+
 }
+
 .fourth {
     width: 50%;
 }
+
 .eigth {
-	width: 50%;
-}
-.group-stage {
-   width: 50%;
+    width: 50%;
 }
 
-.video{
+.group-stage {
+    width: 50%;
+}
+
+.video {
     text-align: center;
     width: 50;
     margin: 5px;
 }
 
-.main-formulary{
-	padding: 15px 15px 15px 15px;
-	background-color: #ffffff;
+.main-formulary {
+    padding: 15px 15px 15px 15px;
+    background-color: #ffffff;
 }
-.main-formulary h1{
+
+.main-formulary h1 {
     font-size: xx-large;
 }
 
 /* .name, .surname, .born, .email, .password, .sports, .gender, .subscribe{ */
-    /* margin-top: 40px; */
+/* margin-top: 40px; */
 /* } */
 
-.buttons{
+.buttons {
     margin: 20px;
     padding: 10px 10px;
     font-size: 20px;
@@ -271,7 +254,7 @@
     border: 5px solid #ce4646;
 }
 
-.buttons :hover{
+.buttons :hover {
     margin: 20px;
     padding: 10px 10px;
     font-size: 15px;
@@ -282,7 +265,7 @@
 }
 
 .sport-label {
-	background-color: #63B0B3;
+    background-color: #63B0B3;
 }
 
 
@@ -297,51 +280,127 @@
 }
 
 .switch-field {
-	display: flex;
-	margin-bottom: 36px;
-	overflow: hidden;
+    display: flex;
+    margin-bottom: 36px;
+    overflow: hidden;
 }
 
 .switch-field input {
-	position: absolute !important;
-	clip: rect(0, 0, 0, 0);
-	height: 1px;
-	width: 1px;
-	border: 0;
-	overflow: hidden;
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
 }
 
 .switch-field label {
-	background-color: #e4e4e4;
-	color: rgba(0, 0, 0, 0.6);
-	font-size: 14px;
-	line-height: 1;
-	text-align: center;
-	padding: 8px 16px;
-	margin-right: -1px;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
-	transition: all 0.1s ease-in-out;
+    background-color: #e4e4e4;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    padding: 8px 16px;
+    margin-right: -1px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.1s ease-in-out;
 }
 
 .switch-field label:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
-.switch-field input:checked + label {
-	background-color: #6c757d;
-	box-shadow: none;
+.switch-field input:checked+label {
+    background-color: #6c757d;
+    box-shadow: none;
 }
 
 .switch-field label:first-of-type {
-	border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
 }
 
 .switch-field label:last-of-type {
-	border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
 }
 
+.global {
+    font-family: 'Chivo';
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/log-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 100vh;
+}
 
+.login-box {
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 3%;
+    color: #ce4646;
+    top: 25%;
+    left: 40%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.logo-log img{
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 120px;
+}
+
+.login-box h1 {
+    text-align: center;
+    font-size: 35px;
+    margin: 40px 0px ;
+}
+
+.login-box label {
+    display: block;
+    margin: 40px 0px 0px 45px;
+    text-align: justify;
+    font-size: 30px;
+    font-weight: bold;
+}
+.login-box input[type="email"], .login-box input[type="password"]{
+    border: none;
+    border-bottom: 2px solid #ce4646;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(30, 29, 29);
+    font-size: 20px;
+}
+.login-box a {
+    text-decoration: none;
+    color: #63B0B3;
+    font-size: 20px;
+    margin-top: 20px;
+    display: block;
+}
+
+.welcome a{
+    color: white;
+    background-color: #63B0B3;
+    font-size: 25px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #63B0B3;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 30px 5px 30px 38px;
+    padding: 2px 15px 2px 15px;
+    border: 6px solid #63B0B3;
+    width: 78%;
+}
 
 @font-face {
     font-family: 'Chivo';
@@ -352,5 +411,3 @@
     font-family: 'Lobster Two';
     src: url(../fonts/LobsterTwo-Regular.ttf);
 }
-
-
