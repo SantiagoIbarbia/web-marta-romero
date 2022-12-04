@@ -19,14 +19,13 @@
     background-repeat: no-repeat;
     background-position: center center;
 	background-size: cover;
-    /* background-size: 350px; */
-    /* margin: 10px; */
+
 }
 .header {
     font-family: 'Lobster Two';
     text-align: center;
     align-items: center;
-    height: 210px;
+	margin-bottom: 15px;
 }
 
 .title {
@@ -111,30 +110,31 @@
 
 .main-content {
     display: inline-block;
+	width: 100%;
 }
 
-.content1 li {
-    /*Quitar los puntos de la lista*/
-    list-style: none;
-}
-
-.content1 {
+.left-bar {
     /*top, right, bottom, left*/
-    padding: 5px;
 	background-color: #ffffff;
     display: inline-block;
     /*width style color*/
     border: 2px solid #06283D;
     font-size: 25px;
+	padding: 5px;
+}
+.left-bar li {
+    /*Quitar los puntos de la lista*/
+    list-style: none;
 }
 
-.content1 h1 {
+
+.left-bar h1 {
     color: #B73E3E;
     font-size: xx-large;
-    margin: 10px 5px 5px 20px;
+    margin: 10px 0px 5px 0px;
 }
 
-.content1 em {
+.left-bar em {
     color: #2f6d93;
     font-size: 30px;
     font-style: normal;
@@ -142,20 +142,21 @@
     margin-top: 100px;
 }
 
-.results {
-    margin-top: 50px;
-}
 
-.content1 a {
+.left-bar a {
     color: #B73E3E;
     font-size: xx-large;
     text-decoration: none;
 }
 
-.content1 img {
-    margin-left: 22%;
+.content-bar {
+	padding: 10px;
 }
 
+.results {
+    margin-top: 50px;
+	text-align: center;
+}
 .results a {
     text-decoration: none;
 }
@@ -178,41 +179,43 @@
     text-align: right;
     font-size: 30px;
     font-weight: bold;
-    margin: 10px;
+    margin-top: 10px;
+	background-color: white;
 
 }
 
-.news2 {
+.news-row {
     text-align: center;
     font-size: 35px;
     font-weight: bold;
-    padding-right: 200px;
     border-bottom: #B73E3E solid;
     border-top: #B73E3E solid;
 }
 
-.news3, .news4 {
+.news-half {
     /*Tienen que ser las clases especificas*/
     display: inline-block;
-    width: 40%;
-    padding: 50px;
-    margin: 5px;
+    /* width: 45%; */
+    padding: 20px;
+	margin: 10px 0px 10px 0px;
+	border: 1px solid #777777;	
+	background-color: white;
 }
 
-.news3 h1 a, .news4 h1 a{
-    font-size: 40px;
-} 
+.news-title{
+	height: 100px;
+}
 
 .news_morata h1 {
     color: #06283D;
-    font-size: 60px;
+    font-size: 50px;
 }
 .morata_image{
     text-align: center;
 }
 .content2 h1 {
     color: #06283D;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .content2 strong {
@@ -294,6 +297,7 @@
     text-align: center;
     padding: 10px 0px 10px 0px;
     text-decoration: none;
+	margin-top:15px;
 }
 
 .switch-field {
