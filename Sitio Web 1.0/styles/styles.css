@@ -432,8 +432,11 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
 .login-box {
     width: 400px;
     height: 600px;
+	text-align: center;
     background-color: white;
     border-radius: 3%;
+	border-left: 4px solid #aaaaaa;
+	border-right: 4px solid #aaaaaa;
     color: #ce4646;
     top: 25%;
     left: 40%;
@@ -489,10 +492,9 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
     border-radius: 10px;
     box-sizing: border-box;
     text-decoration: none;
-    margin: 30px 5px 30px 38px;
+    margin: 30px 5px 30px 5px;
     padding: 2px 15px 2px 15px;
     border: 6px solid #63B0B3;
-    width: 78%;
 }
 
 .welcome-image{
