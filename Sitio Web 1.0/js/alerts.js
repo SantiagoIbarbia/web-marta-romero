@@ -1,5 +1,5 @@
 function showAlertOlvidePass() {
-  alert("Piensa un poco más");
+  alert("Has recibido un email con la nueva contraseña");
 }
 
 function showPartidoEnDirectoNoHay() {

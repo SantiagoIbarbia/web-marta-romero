@@ -1,25 +1,31 @@
+@font-face {
+    font-family: 'Chivo';
+    src: url(../fonts/Chivo-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Lobster Two';
+    src: url(../fonts/LobsterTwo-Regular.ttf);
+}
 
 .global-container {
     font-family: 'Chivo';
     text-align: justify;
     background-color: white;
-    background-image: url(../images/fondo4.webp);
+    background-image: url(../images/fondo.webp);
     background-repeat: no-repeat;
     background-position: center center;
-	background-size: cover;
-	margin-left: 20px;
-	margin-right: 20px;
+    background-size: cover;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.row {
-	margin-bottom:15px;
-}
-
+/************************HEADER************************/
 .header {
     font-family: 'Lobster Two';
     text-align: center;
     align-items: center;
-	margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .title {
@@ -47,16 +53,19 @@
 }
 
 .image {
-    /*Hemos de poner el display en cada una de las cajas que queremos que se modelen*/
+    /*Poner display en cada caja se ha de modelar*/
     display: inline-block;
-    /*Hemos de poner el width en cada una de las cajas que se van a ver afectadas*/
     width: 50%;
     height: 5%;
 }
 
+.image img {
+    width: 210px;
+    height: 110px;
+}
+
 .log {
     display: inline-block;
-    /*Alinia la caja con la de al lado*/
     vertical-align: center;
 }
 
@@ -79,32 +88,32 @@
     color: white;
 }
 
-
 .subtitle {
     font-size: xx-large;
     background-color: #CC3636;
     color: white;
     width: 100%;
     text-align: center;
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
+/************************MAIN-CONTENT************************/
 .main-content {
     display: inline-block;
-	width: 100%;
+    width: 100%;
 }
 
 .left-bar {
-    /*top, right, bottom, left*/
-	background-color: #ffffff;
+    background-color: #ffffff;
     display: inline-block;
+    vertical-align: top;
     /*width style color*/
     border: 2px solid #06283D;
     font-size: 25px;
-	padding: 5px;
+    padding: 5px;
 }
+
 .left-bar li {
-    /*Quitar los puntos de la lista*/
     list-style: none;
 }
 
@@ -123,21 +132,25 @@
     margin-top: 100px;
 }
 
-
 .left-bar a {
     color: #B73E3E;
     font-size: xx-large;
     text-decoration: none;
 }
 
+.left-bar a img {
+    width: 200px;
+}
+
 .content-bar {
-	padding: 10px;
+    padding: 10px;
 }
 
 .results {
     margin-top: 50px;
-	text-align: center;
+    text-align: center;
 }
+
 .results a {
     text-decoration: none;
 }
@@ -149,50 +162,9 @@
     font-size: 20px;
     text-decoration: none;
     color: #06283D;
-	padding: 0px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
 }
 
-.content2 a {
-    text-decoration: none;
-    color: #06283D;
-}
-
-.news1 {
-    text-align: right;
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 10px;
-	background-color: white;
-    border-bottom: #B73E3E solid;
-}
-
-.news-row {
-    text-align: center;
-    font-size: 35px;
-    font-weight: bold;
-    border-bottom: #B73E3E solid;
-}
-
-.news-half {
-    /*Tienen que ser las clases especificas*/
-    display: inline-block;
-    /* width: 45%; */
-    padding: 20px;
-	margin: 10px 0px 10px 0px;
-	border: 1px solid #777777;	
-	background-color: white;
-}
-
-.news-title{
-	height: 100px;
-}
-
-.new-info-container{
-	padding: 0px 30px 0px 30px;
-}
-.morata_image {
-    text-align: center;
-}
 .content2 h1 {
     color: #06283D;
     font-size: 50px;
@@ -203,48 +175,115 @@
     font-weight: bold;
 }
 
-/* .final { */
-    /* display: inline; */
-/* } */
-
-.result-section {
-    width: 80%;
-	margin-bottom: 30px;
-}
-.result-section table, tr {
-    width: 100%;
-}
-
-.column-date{
-	width: 100px;
-}
-.column-group{
-	width: 100px;
-}
-.column-teams{
-	width: 250px;
-}
-.phase-title{
-	letter-spacing: 5px;
-	font-family: 'Chivo';
-    text-align: left;
-    color: #CC3636;
-	text-decoration-line: underline;
-	text-decoration-color: #CC3636;
-	text-decoration-style: dotted; 
-}
-
-.date-result{
-	font-size: 16px;
+.content2 a {
     text-decoration: none;
     color: #06283D;
 }
-.video {
-    text-align: center;
-    width: 50;
-    margin: 5px;
+
+/************************MAIN-CONTENT INDEX************************/
+.news1 {
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: white;
+    border-bottom: #B73E3E solid;
 }
 
+.winner img {
+    width: 1000px;
+}
+
+.news-row {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    border-bottom: #B73E3E solid;
+}
+
+.col-6 img {
+    width: 400px;
+    height: 300px;
+}
+
+.news-half {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    border: 1px solid #777777;
+    background-color: white;
+}
+
+.news-title {
+    height: 100px;
+}
+
+/************************MAIN-CONTENT NOTICIA1************************/
+.result-section {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.result-section table,
+tr {
+    width: 100%;
+}
+
+.column-date {
+    width: 100px;
+}
+
+.column-group {
+    width: 100px;
+}
+
+.column-teams {
+    width: 250px;
+}
+
+.phase-title {
+    letter-spacing: 5px;
+    font-family: 'Chivo';
+    text-align: left;
+    color: #CC3636;
+    text-decoration-line: underline;
+    text-decoration-color: #CC3636;
+    text-decoration-style: dotted;
+}
+
+.date-result {
+    font-size: 16px;
+    text-decoration: none;
+    color: #06283D;
+}
+
+/************************MAIN-CONTENT NOTICIA2************************/
+.new-info-container {
+    padding: 0px 30px 0px 30px;
+}
+
+.morata_image {
+    text-align: center;
+}
+
+.morata_image img {
+    width: 500px;
+    margin: 20px 10px;
+}
+
+/************************MAIN-CONTENT NOTICIAV************************/
+
+.reproduce {
+    text-align: center;
+    width: 100%;
+}
+
+.reproduce video {
+    width: 50%;
+    margin: 20px 10px;
+}
+
+/************************MAIN-CONTENT FORMULARIO************************/
 .main-formulary {
     padding: 15px 15px 15px 15px;
     background-color: #ffffff;
@@ -254,44 +293,12 @@
     font-size: xx-large;
 }
 
-.buttons{
-
-    margin: 20px;
-    padding: 10px 10px;
-    font-size: 20px;
-    border-radius: 10px;
-    color: aliceblue;
-    background-color: #ce4646;
-    border: 5px solid #ce4646;
+.sports {
+    margin-top: 40px;
 }
 
-.buttons :hover {
-    margin: 20px;
-    padding: 10px 10px;
-    font-size: 15px;
-    border-radius: 10px;
-    color: #ce4646;
-    background-color: aliceblue;
-    border: 5px solid aliceblue;
-}
-
-.sports{
-	margin-top: 40px;
-}
 .sport-label {
     background-color: #63B0B3;
-}
-
-
-.footer {
-    font-size: 15px;
-    background-color: #ce4646;
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0px 10px 0px;
-    text-decoration: none;
-	margin-top:50px;
 }
 
 .switch-field {
@@ -326,10 +333,9 @@
     cursor: pointer;
 }
 
-
-.switch-field input:checked + label {
-	background-color: #63B0B3;
-	box-shadow: none;
+.switch-field input:checked+label {
+    background-color: #63B0B3;
+    box-shadow: none;
 
 }
 
@@ -345,10 +351,12 @@ ul.ks-cboxtags {
     list-style: none;
     padding: 10px;
 }
-ul.ks-cboxtags li{
-  display: inline;
+
+ul.ks-cboxtags li {
+    display: inline;
 }
-ul.ks-cboxtags li label{
+
+ul.ks-cboxtags li label {
     display: inline-block;
     background-color: #63B0B3;
     border: 2px solid rgba(139, 139, 139, .3);
@@ -384,13 +392,13 @@ ul.ks-cboxtags li label::before {
     transition: transform .3s ease-in-out;
 }
 
-ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
     content: "\f00c";
     transform: rotate(-360deg);
     transition: transform .3s ease-in-out;
 }
 
-ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+ul.ks-cboxtags li input[type="checkbox"]:checked+label {
     border: 2px solid #1bdbf8;
     background-color: #63B0B3;
     color: #fff;
@@ -398,54 +406,67 @@ ul.ks-cboxtags li input[type="checkbox"]:checked + label {
 }
 
 ul.ks-cboxtags li input[type="checkbox"] {
-  display: absolute;
+    display: absolute;
 }
+
 ul.ks-cboxtags li input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-}
-ul.ks-cboxtags li input[type="checkbox"]:focus + label {
-  border: 2px solid #63B0B3;
+    position: absolute;
+    opacity: 0;
 }
 
+ul.ks-cboxtags li input[type="checkbox"]:focus+label {
+    border: 2px solid #63B0B3;
+}
 
-.form-input label  {
-  display:block;
+.form-input label {
+    display: block;
 }
 
 .big input {
-  width:70%;
+    width: 70%;
 }
 
-.global {
-    font-family: 'Chivo';
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background-image: url(../images/log-img.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    height: 100vh;
+.buttons-box{
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #ce4646;
+    border: 5px solid #ce4646;
 }
 
+.buttons :hover {
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #ce4646;
+    background-color: aliceblue;
+    border: 5px solid #ce4646;
+}
+
+/************************MAIN-CONTENT LOGIN************************/
 .login-box {
     width: 400px;
-    height: 600px;
-	text-align: center;
+    height: 630px;
+    text-align: center;
     background-color: white;
     border-radius: 3%;
-	border-left: 4px solid #aaaaaa;
-	border-right: 4px solid #aaaaaa;
+    border-left: 4px solid #aaaaaa;
+    border-right: 4px solid #aaaaaa;
     color: #ce4646;
     top: 25%;
     left: 40%;
     position: absolute;
     box-sizing: border-box;
     padding: 70px 30px;
+    display: inline-block;
+    vertical-align: top;
+
 }
 
-.logo-log img{
+.logo-log img {
     width: 150px;
     position: absolute;
     top: 20px;
@@ -455,7 +476,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
 .login-box h1 {
     text-align: center;
     font-size: 35px;
-    margin: 40px 0px ;
+    margin: 40px 0px;
 }
 
 .login-box label {
@@ -465,7 +486,9 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
     font-size: 30px;
     font-weight: bold;
 }
-.login-box input[type="email"], .login-box input[type="password"]{
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
     border: none;
     border-bottom: 2px solid #ce4646;
     background: transparent;
@@ -474,6 +497,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
     color: rgb(30, 29, 29);
     font-size: 20px;
 }
+
 .login-box a {
     text-decoration: none;
     color: #63B0B3;
@@ -482,7 +506,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
     display: block;
 }
 
-.welcome-submit{
+.welcome-submit {
     color: white;
     background-color: #63B0B3;
     font-size: 25px;
@@ -495,24 +519,28 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
     margin: 30px 5px 30px 5px;
     padding: 2px 15px 2px 15px;
     border: 6px solid #63B0B3;
-	width:80%;
+    width: 80%;
 }
 
-.welcome-image{
-	width: 500px;
-	height: 300px;
+/************************MAIN-CONTENT Bienvenida************************/
+.welcome-section {
+    text-align: center;
 }
 
-.welcome-section{
-	text-align: center;
+.welcome-image {
+    width: 50%;
+    border-radius: 50%;
+    margin: 5%;
 }
 
-@font-face {
-    font-family: 'Chivo';
-    src: url(../fonts/Chivo-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: 'Lobster Two';
-    src: url(../fonts/LobsterTwo-Regular.ttf);
+/************************FOOTER************************/
+.footer {
+    font-size: 15px;
+    background-color: #ce4646;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+    margin-top: 50px;
 }
