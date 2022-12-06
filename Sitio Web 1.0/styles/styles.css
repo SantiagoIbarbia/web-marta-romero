@@ -482,7 +482,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
     display: block;
 }
 
-.welcome a{
+.welcome-submit{
     color: white;
     background-color: #63B0B3;
     font-size: 25px;
@@ -495,6 +495,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
     margin: 30px 5px 30px 5px;
     padding: 2px 15px 2px 15px;
     border: 6px solid #63B0B3;
+	width:80%;
 }
 
 .welcome-image{
