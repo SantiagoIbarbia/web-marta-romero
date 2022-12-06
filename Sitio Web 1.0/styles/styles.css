@@ -7,7 +7,8 @@
     background-repeat: no-repeat;
     background-position: center center;
 	background-size: cover;
-
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .row {
@@ -85,6 +86,7 @@
     color: white;
     width: 100%;
     text-align: center;
+	margin-top: 20px;
 }
 
 .main-content {
@@ -161,7 +163,7 @@
     font-weight: bold;
     margin-top: 10px;
 	background-color: white;
-
+    border-bottom: #B73E3E solid;
 }
 
 .news-row {
@@ -169,7 +171,6 @@
     font-size: 35px;
     font-weight: bold;
     border-bottom: #B73E3E solid;
-    border-top: #B73E3E solid;
 }
 
 .news-half {
@@ -202,34 +203,42 @@
     font-weight: bold;
 }
 
-.final {
-    display: inline;
+/* .final { */
+    /* display: inline; */
+/* } */
 
+.result-section {
+    width: 80%;
+	margin-bottom: 30px;
+}
+.result-section table, tr {
+    width: 100%;
 }
 
-.third {
-    display: inline;
-
+.column-date{
+	width: 100px;
+}
+.column-group{
+	width: 100px;
+}
+.column-teams{
+	width: 250px;
+}
+.phase-title{
+	letter-spacing: 5px;
+	font-family: 'Chivo';
+    text-align: left;
+    color: #CC3636;
+	text-decoration-line: underline;
+	text-decoration-color: #CC3636;
+	text-decoration-style: dotted; 
 }
 
-.semi {
-    display: inline;
-    width: 50%;
-
+.date-result{
+	font-size: 16px;
+    text-decoration: none;
+    color: #06283D;
 }
-
-.fourth {
-    width: 50%;
-}
-
-.eigth {
-    width: 50%;
-}
-
-.group-stage {
-    width: 50%;
-}
-
 .video {
     text-align: center;
     width: 50;
@@ -484,6 +493,15 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
     padding: 2px 15px 2px 15px;
     border: 6px solid #63B0B3;
     width: 78%;
+}
+
+.welcome-image{
+	width: 500px;
+	height: 300px;
+}
+
+.welcome-section{
+	text-align: center;
 }
 
 @font-face {

@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="fonts/Chivo-VariableFont_wght.ttf">
     <link rel="stylesheet" href="fonts/LobsterTwo-Regular.ttf">
-	<link rel="stylesheet" href="styles/bootstrap.min.css">
-	<link rel="stylesheet" href="styles/bootstrap-theme.min.css">
-	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/alerts.js"></script>
     <script src="https://kit.fontawesome.com/09d1986c46.js" crossorigin="anonymous"></script>
     <!--Enlace imprescindible para insertar iconos-->
     <link rel="shortcut icon" type="image/ico" href="images/pap.ico">
@@ -23,7 +23,7 @@
             <!--HTML copiado de Font Awesome-->
             <div class="title">
                 <div class="live">
-                    <a href="#"><i class="fa-solid fa-circle-play"></i> Partido en directo</a>
+                    <a href="#" onclick="showPartidoEnDirectoNoHay()"><i class="fa-solid fa-circle-play"></i> Partido en directo</a>
                 </div>
                 <div class="image">
                     <a href="index.html">
@@ -52,11 +52,11 @@
 						</li>
 						<li>
 							<p><em>Tercer lugar</em></p>
-							<p>Alemania 1 - Brasil 2</p>
+							<p>Francia 1 - Brasil 2</p>
 						</li>
 						<li>
 							<p><em>Semifinales</em></p>
-							<p>España 2 - Alemania 0</p>
+							<p>España 2 - Francia 0</p>
 							<p>Argentina 1 - Brasil 0</p>
 						</li>
 					</ul>
@@ -68,33 +68,35 @@
 				</div>
             </div>
 			<div class="content2 col-9">
-				<div class="news1">
-					<h2><a href="https://www.google.com/search?q=mundial+2022&rlz=1C1FKPE_esES997ES998&oq=mundi&aqs=chrome.0.69i59j69i57j46i131i433i512j0i131i433i512j0i131i433j0i131i433i512j69i60l2.1296j0j7&sourceid=chrome&ie=UTF-8#sie=lg;/m/0fp_8fm;2;/m/030q7;lb;fp;1;;;"
-							target="_blank"><strong><i class="fa-solid fa-chart-line"></i> Estadísticas</strong></a></h2>
-				</div>
-				<div class="row news-row">
-					<h1><a href="noticia2.html"><strong>¡¡España ganadora del mundial!!</strong></a></h1>
-					<p><a href="noticia2.html"><img src="images/mundial.jpg" alt="Copa del mundial" width="1000px"></a></p>
-				</div>
-				<div class="row news-row">
-					<div class="col-6">
-						<div class="news-half">
-							<div class="news-title">
-								<h2><a href="https://elpais.com/deportes/mundial-futbol/2022-11-20/la-ceremonia-de-inauguracion-del-mundial-de-futbol-de-qatar-2022-en-imagenes.html"
-									target="_blank"><strong>Ceremonia de inauguración</strong></a></h2>
-							</div>
-							<p><a href="https://elpais.com/deportes/mundial-futbol/2022-11-20/la-ceremonia-de-inauguracion-del-mundial-de-futbol-de-qatar-2022-en-imagenes.html"
-									target="_blank"><img src="images/Inauguracion.jpg" alt="Imagen ceremonia inauguración"
-										width="400px" height="300px"></a></p>
-						</div>
+				<div class="new-info-container">
+					<div class="news1">
+						<h2><a href="https://www.google.com/search?q=mundial+2022&rlz=1C1FKPE_esES997ES998&oq=mundi&aqs=chrome.0.69i59j69i57j46i131i433i512j0i131i433i512j0i131i433j0i131i433i512j69i60l2.1296j0j7&sourceid=chrome&ie=UTF-8#sie=lg;/m/0fp_8fm;2;/m/030q7;lb;fp;1;;;"
+								target="_blank"><strong><i class="fa-solid fa-chart-line"></i> Estadísticas</strong></a></h2>
 					</div>
-					<div class="col-6">
-						<div class="news-half">
-							<div class="news-title">
-								<h2><a href="noticiav.html"><strong>Un aficionado invade la cancha</strong></a></h2>
+					<div class="row news-row">
+						<h1><a href="noticia2.html"><strong>¡¡España ganadora del mundial!!</strong></a></h1>
+						<p><a href="noticia2.html"><img src="images/mundial.jpg" alt="Copa del mundial" width="1000px"></a></p>
+					</div>
+					<div class="row news-row">
+						<div class="col-6">
+							<div class="news-half">
+								<div class="news-title">
+									<h2><a href="https://elpais.com/deportes/mundial-futbol/2022-11-20/la-ceremonia-de-inauguracion-del-mundial-de-futbol-de-qatar-2022-en-imagenes.html"
+										target="_blank"><strong>Ceremonia de inauguración</strong></a></h2>
+								</div>
+								<p><a href="https://elpais.com/deportes/mundial-futbol/2022-11-20/la-ceremonia-de-inauguracion-del-mundial-de-futbol-de-qatar-2022-en-imagenes.html"
+										target="_blank"><img src="images/Inauguracion.jpg" alt="Imagen ceremonia inauguración"
+											width="400px" height="300px"></a></p>
 							</div>
-							<p><a href="noticiav.html"><img src="images/chico_bandera.jpg" alt="chico con bandera LGTBI"
-										width="400px" height="300px"></a></p>
+						</div>
+						<div class="col-6">
+							<div class="news-half">
+								<div class="news-title">
+									<h2><a href="noticiav.html"><strong>Un aficionado invade la cancha</strong></a></h2>
+								</div>
+								<p><a href="noticiav.html"><img src="images/chico_bandera.jpg" alt="chico con bandera LGTBI"
+											width="400px" height="300px"></a></p>
+							</div>
 						</div>
 					</div>
 				</div>

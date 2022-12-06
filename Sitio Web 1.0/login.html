@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="fonts/Chivo-VariableFont_wght.ttf">
-    <link rel="stylesheet" href="fonts/LobsterTwo-Regular.ttf">
-    <script src="https://kit.fontawesome.com/09d1986c46.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/ico" href="images/pap.ico">
-    <title>Login | PAP</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="fonts/Chivo-VariableFont_wght.ttf">
+		<link rel="stylesheet" href="fonts/LobsterTwo-Regular.ttf">
+		<link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+		<script src="js/alerts.js"></script>
+		<script src="https://kit.fontawesome.com/09d1986c46.js" crossorigin="anonymous"></script>
+		<link rel="shortcut icon" type="image/ico" href="images/pap.ico">
+		<title>Login | PAP</title>
 
-</head>
+	</head>
 
-<body>
-    <div class="global">
-        <div class="login-box">
-            <div class="logo-log">
-                <img src="images/title.png" alt="Logo de PAP" width="200px">
-            </div>
-            <h1>Iniciar sesión</h1>
-            <form>
-                <div class="email">
-                    <p><label for="email">Email:</label></p>
-                    <p><input type="email" id="email" name="email" placeholder="email@email.com" required></p>
-                </div>
-                <div class="passwd">
-                    <p><label for="password">Contraseña:</label></p>
-                    <p><input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8-10}"
-                            title="Introduce una contraseña de mínimo 8 y máximo 10 letras"
-                            placeholder="Introduce contraseña" required minlength="8" maxlength="10"></p>
-                </div>
-                <div class="welcome">
-                <a href="bienvenida.html">Iniciar sesión</a>
-                </div>
-                <div class="forgotten">
-                    <a href="#">¿Has olvidado tu contraseña?</a>
-                </div>
-            </form>
-        </div>
-    </div>
-</body>
+	<body>
+		<div class="global">
+			<div class="login-box">
+				<div class="logo-log">
+					<img src="images/title.png" alt="Logo de PAP" width="200px">
+				</div>
+				<h1>Iniciar sesión</h1>
+				<form>
+					<div class="email">
+						<p><label for="email">Email:</label></p>
+						<p><input type="email" id="email" name="email" placeholder="email@email.com" required></p>
+					</div>
+					<div class="passwd">
+						<p><label for="password">Contraseña:</label></p>
+						<p><input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8-10}"
+								title="Introduce una contraseña de mínimo 8 y máximo 10 letras"
+								placeholder="Introduce contraseña" required minlength="8" maxlength="10"></p>
+					</div>
+					<div class="welcome">
+						<a href="bienvenida.html">Iniciar sesión</a>
+					</div>
+					<div class="forgotten">
+						<a href="#" onclick="showAlertOlvidePass()">¿Has olvidado tu <strong>contraseña</strong>?</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
 
 </html>

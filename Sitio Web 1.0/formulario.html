@@ -8,9 +8,9 @@
 		<link rel="stylesheet" href="styles/styles.css">
 		<link rel="stylesheet" href="fonts/Chivo-VariableFont_wght.ttf">
 		<link rel="stylesheet" href="fonts/LobsterTwo-Regular.ttf">
-		<link rel="stylesheet" href="styles/bootstrap.min.css">
-		<link rel="stylesheet" href="styles/bootstrap-theme.min.css">
-		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+		<script src="js/alerts.js"></script>
 		<script src="https://kit.fontawesome.com/09d1986c46.js" crossorigin="anonymous"></script>
 		<link rel="shortcut icon" type="image/ico" href="images/pap.ico">
 		<title>Registro | PAP</title>
@@ -21,7 +21,7 @@
 			<div class="header">
 				<div class="title">
 					<div class="live">
-						<a href="#"><i class="fa-solid fa-circle-play"></i> Partido en directo</a>
+						<a href="#" onclick="showPartidoEnDirectoNoHay()"><i class="fa-solid fa-circle-play"></i> Partido en directo</a>
 					</div>
 					<div class="image">
 						<a href="index.html">
@@ -50,11 +50,11 @@
 							</li>
 							<li>
 								<p><em>Tercer lugar</em></p>
-								<p>Alemania 1 - Brasil 2</p>
+								<p>Francia 1 - Brasil 2</p>
 							</li>
 							<li>
 								<p><em>Semifinales</em></p>
-								<p>España 2 - Alemania 0</p>
+								<p>España 2 - Francia 0</p>
 								<p>Argentina 1 - Brasil 0</p>
 							</li>
 						</ul>
@@ -74,13 +74,13 @@
 									<div class="col">
 										<div class="form-input big">
 											<label for="name">Nombre:</label>
-											<input type="text" id="name" name="name" maxlength="15" required>
+											<input type="text" id="name" name="name" minlength="2" maxlength="40" required>
 										</div>
 									</div>
 									<div class="col">
 										<div class="form-input big">
 											<label for="surname">Apellidos:</label>
-											<input type="text" id="surname" name="surname" maxlength="15" required>
+											<input type="text" id="surname" name="surname" minlength="3" maxlength="40" required>
 										</div>
 									</div>
 								</div>
@@ -88,9 +88,9 @@
 									<div class="col">
 										<span> Sexo: </span>
 										<div class="switch-field">
-											<input type="radio" id="radio-one" name="switch-one" value="woman" checked/>
+											<input type="radio" id="radio-one" name="sex" value="woman" checked/>
 											<label for="radio-one">Mujer</label>
-											<input type="radio" id="radio-two" name="switch-one" value="man" />
+											<input type="radio" id="radio-two" name="sex" value="man" />
 											<label for="radio-two">Hombre</label>
 										</div>
 									</div>
@@ -104,7 +104,7 @@
 								<div class="row">
 									<div class="col">
 										<div class="form-input big">
-											<label for="email">Correo electrónico:</label>
+											<label for="email">Correo electrónico (Usuario):</label>
 											<input type="email" id="email" name="email" placeholder="email@email.com" required>
 										</div>
 									</div>
@@ -124,31 +124,31 @@
 									</p>						
 									<ul class="ks-cboxtags">
 										<li>
-											<input type="checkbox" id="fut" value="futbol">
+											<input type="checkbox" id="fut" name="sport-interest" value="futbol">
 											<label for="fut">Fútbol</label>
 										</li>
 										<li>
-											<input type="checkbox" id="bal" value="futbol">
+											<input type="checkbox" id="bal" name="sport-interest" value="basket">
 											<label for="bal">Baloncesto</label>
 										</li>
 										<li>
-											<input type="checkbox" id="ten" value="futbol">
+											<input type="checkbox" id="ten" name="sport-interest" value="tennis">
 											<label for="ten">Tennis</label>
 										</li>
 										<li>
-											<input type="checkbox" id="pad" value="futbol">
+											<input type="checkbox" id="pad" name="sport-interest" value="paddel">
 											<label for="pad">Paddel</label>
 										</li>
 										<li>
-											<input type="checkbox" id="vol" value="futbol">
+											<input type="checkbox" id="vol" name="sport-interest" value="voley">
 											<label for="vol">Voleyball</label>
 										</li>
 										<li>
-											<input type="checkbox" id="rug" value="futbol">
+											<input type="checkbox" id="rug" name="sport-interest" value="rugby">
 											<label for="rug">Rugby</label>
 										</li>
 										<li>
-											<input type="checkbox" id="art" value="futbol">
+											<input type="checkbox" id="art" name="sport-interest" value="martial-arts">
 											<label for="art">Artes marciales</label>
 										</li>
 									</ul>
@@ -159,7 +159,7 @@
 										<label> Suscribirse para recibir todas las novedades</label>
 								</div>
 								<div>
-									<input  class="buttons" type="submit" value="Enviar">
+									<input class="buttons" type="submit" value="Enviar" formtarget="_blank">
 									<input class="buttons" type="reset" value="Borrar">
 								</div>
 							</div>

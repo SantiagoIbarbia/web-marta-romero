@@ -8,69 +8,37 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="fonts/Chivo-VariableFont_wght.ttf">
     <link rel="stylesheet" href="fonts/LobsterTwo-Regular.ttf">
-	<link rel="stylesheet" href="styles/bootstrap.min.css">
-	<link rel="stylesheet" href="styles/bootstrap-theme.min.css">
-	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/alerts.js"></script>
     <script src="https://kit.fontawesome.com/09d1986c46.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/ico" href="images/pap.ico">
     <title>Resultados | PAP</title>
 </head>
 
-<body>
-    <div class="global-container">
-        <div class="header">
-            <div class="title">
-                <div class="live">
-                    <a href="#"><i class="fa-solid fa-circle-play"></i> Partido en directo</a>
-                </div>
-                <div class="image">
-                    <a href="index.html">
-                        <img src="images/logo2.png" alt="logo de periodico" width=210 height=110>
-                    </a>
-                </div>
-                <div class="log">
-                    <a href="formulario.html">Regístrate</a>
-                </div>
-                <div class="log">
-                    <a href="login.html">Iniciar sesión</a>
-                </div>
-            </div>
-            <div class="subtitle">
-                <span>Mundial Qatar 2022</span>
-            </div>
-        </div>
-        <div class="main-content row">
-            <div class="content1 col-3">
-                <h1> Últimos resultados:</h1>
-                <ul class="list">
-                    <li>
-                        <p><em>Final</em></p>
-                        <p>España 1 - Argentina 0</p>
-                    </li>
-                    <li>
-                        <p><em>Tercer lugar</em></p>
-                        <p>Alemania 1 - Brasil 2</p>
-                    </li>
-                    <li>
-                        <p><em>Semifinales</em></p>
-                        <p>España 2 - Alemania 0</p>
-                        <p>Argentina 1 - Brasil 0</p>
-                    </li>
-                </ul>
-                <div class="results">
-                    <h1><a href="noticia1.html"><strong>Resultados:</strong></a></h1>
-                    <p><a href="noticia1.html"><img src="images/results.jpg" alt="Cuadro de grupos" width="200px"></a></p>
-                </div>
-            </div>
-			<div class="content2 col-9">
-				<div>
-					<h1>Partidos</h1>
-					<p><strong>Resultados</strong></p>
+	<body>
+		<div class="global-container">
+			<div class="header">
+				<div class="title">
+					<div class="live">
+						<a href="#" onclick="showPartidoEnDirectoNoHay()"><i class="fa-solid fa-circle-play"></i> Partido en directo</a>
+					</div>
+					<div class="image">
+						<a href="index.html">
+							<img src="images/logo2.png" alt="logo de periodico" width=210 height=110>
+						</a>
+					</div>
+					<div class="log">
+						<a href="formulario.html">Regístrate</a>
+					</div>
+					<div class="log">
+						<a href="login.html">Iniciar sesión</a>
+					</div>
 				</div>
 				<div class="subtitle">
 					<span>Mundial Qatar 2022</span>
 				</div>
-			</div>
+			</div>      
 			<div class="main-content row">
 				<div class="left-bar col-3">
 					<div class="content-bar">
@@ -82,11 +50,11 @@
 							</li>
 							<li>
 								<p><em>Tercer lugar</em></p>
-								<p>Alemania 1 - Brasil 2</p>
+								<p>Francia 1 - Brasil 2</p>
 							</li>
 							<li>
 								<p><em>Semifinales</em></p>
-								<p>España 2 - Alemania 0</p>
+								<p>España 2 - Francia 0</p>
 								<p>Argentina 1 - Brasil 0</p>
 							</li>
 						</ul>
@@ -98,391 +66,453 @@
 					</div>
 				</div>
 				<div class="content2 col-9">
-					<div>
-						<h1>Partidos</h1>
-						<p><strong>Resultados</strong></p>
-					</div>
-					<div class="final">
-						<table>
-							<caption><em>Final</em></caption>
-							<tr>
-								<th>Fecha</th>
-								<th>Esquipo vs Equipo</th>
-							</tr>
-							<tr>
-								<td>Domingo 18/12</td>
-								<td>España 1 - Argentina 0</td>
-							</tr>
-						</table>
-
-						<div class="third">
-							<table>
-								<caption><em>Tercer lugar</em></caption>
-								<tr>
-									<th>Fecha</th>
-									<th>Esquipo vs Equipo</th>
-								</tr>
-								<tr>
-									<td>Sábado 17/12</td>
-									<td>Alemania 1 - Brasil 2</td>
-								</tr>
-							</table>
-
+					<div class="new-info-container">
+						<div>
+							<h1>Partidos</h1>
+							<p><strong>Resultados</strong></p>
 						</div>
+						<div>
+							<div class="result-section">
+								<span class="phase-title">Final</span>
+								<table>
+									<col class="column-date">
+									<col class="column-teams">
+									<tr>
+										<th>Fecha</th>
+										<th>Esquipo vs Equipo</th>
+									</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Domingo 18/12</em></span>
+										</td>
+										<td><strong>España 1</strong> - Argentina 0</td>
+									</tr>
+								</table>
+							</div>
+							<div class="result-section">
+								<span class="phase-title">3º y 4º puesto</span>
+								<table>			
+									<col class="column-date"/>
+									<col class="column-teams"/>							
+									<tr>
+										<th>Fecha</th>
+										<th>Equipo vs Equipo</th>
+									</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Sábado 17/12</em></span>
+										</td>
+										<td>Francia 1 - <strong>Brasil 2</strong></td>
+									</tr>
+								</table>
+							</div>
+							<div class="result-section">
+								<span class="phase-title">Semifinales</span>
+								<table>
+									<col class="column-date">
+									<col class="column-teams">
+									<tr>
+										<th>Fecha</th>
+										<th>Esquipo vs Equipo</th>
+									</tr>
+										<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Martes 13/12</em></span>
+										</td>
+										<td><strong>España 2</strong> - Francia 0</td>
+									</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Miércoles 14/12</em></span>
+										</td>
+										<td><strong>Argentina 1</strong> - Brasil 0</td>
+									</tr>
+								</table>
+							</div>
+							<div class="result-section">
+								<span class="phase-title">Cuartos de final</span>
+								<table>
+									<col class="column-date">
+									<col class="column-teams">
+									<tr>
+										<th>Fecha</th>
+										<th>Esquipo vs Equipo</th>
+									</tr>
+										<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Viernes 9/12</em></span>
+										</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Inglaterra - Francia</td>
+									</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Sábado 10/12</em></span>
+										</td>
+										<td>Croacia - Brasil</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Paises Bajos - Argentina</td>
+									</tr>
+								</table>
+							</div>
+							<div class="result-section">
+								<span class="phase-title">Octavos de final</span>
+								<table>	
+									<col class="column-date">
+									<col class="column-teams">
+									<tr>
+										<th>Fecha</th>
+										<th>Esquipo vs Equipo</th>
+									</tr>
 
-						<div class="semi">
-							<table>
-								<caption><em>Semifinal</em></caption>
-								<tr>
-									<th>Fecha</th>
-									<th>Esquipo vs Equipo</th>
-								</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Martes 6/12</em></span>
+										</td>
+										<td>Marruecos - España</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Portugal - Suiza</td>
+									</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Lunes 5/12</em></span>
+										</td>
+										<td>Japón 1 (1) - <strong>Croacia 1 (3)</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><strong>Brasil 4</strong> - Corea del Sur 1</td>
+									</tr>
 
-								<tr>
-									<td>Martes 13/12</td>
-									<td>España 2 - Alemania 0</td>
-								</tr>
-								<tr>
-									<td>Miercoles 14/12</td>
-									<td>Argentina 1 - Brasil 0</td>
-								</tr>
-							</table>
-						</div>
-						<div class="fourth">
-							<table>
-								<caption><em>Cuartos de final</em></caption>
-								<tr>
-									<th>Fecha</th>
-									<th>Esquipo vs Equipo</th>
-								</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Domingo 4/12</em></span>
+										</td>
+										<td><strong>Francia 3</strong> - Polonia 1</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><strong>Ingraterra 3</strong> - Senegal 0</td>
+									</tr>
 
-								<tr>
-									<td>Viernes 9/12</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td>Sábado 10/12</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>-</td>
-								</tr>
-							</table>
-						</div>
-						<div class="eigth">
-							<table>
-								<caption><em>Octavos</em></caption>
-								<tr>
-									<th>Fecha</th>
-									<th>Esquipo vs Equipo</th>
-								</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Sábado 3/12</em></span>
+										</td>
+										<td><strong>Países Bajos 3</strong> - Estados Unidos 1</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><strong>Argentina 2</strong> - Australia 1</td>
+									</tr>
+								</table>
+							</div>
+							<div class="group-stage result-section">
+							
+								<span class="phase-title">Fase de grupos</span>
+								<table>
+									<col class="column-date">
+									<col class="column-group">
+									<col class="column-teams">
+									<tr>
+										<th>Fecha</th>
+										<th>Grupo</th>
+										<th>Esquipo vs Equipo</th>
+									</tr>
 
-								<tr>
-									<td>Martes 6/12</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td>Lunes 5/12</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>-</td>
-								</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Viernes 2/12</em></span>
+										</td>
+										<td>Grupo H</td>
+										<td><strong>Corea del Sur 2</strong> - Portugal 1</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo H</td>
+										<td>Ghana 0 - <strong>Uruguay 2</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo G</td>
+										<td>Serbia 2 - <strong>Suiza 3</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo G</td>
+										<td><strong>Camerún 1</strong> - Brasil 0</td>
+									</tr>
 
-								<tr>
-									<td>Domingo 4/12</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>-</td>
-								</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Jueves 1/12</em></span>
+										</td>
+										<td>Grupo F</td>
+										<td>Croacia 0 - Bélgica 0</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo F</td>
+										<td>Canadá 1 - <strong>Marruecos 2</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo E</td>
+										<td>España 1 - <strong>Japón 2</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo E</td>
+										<td>Costa Rica 2 - <strong>Alemania 4</strong></td>
+									</tr>
 
-								<tr>
-									<td>Sábado 3/12</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>-</td>
-								</tr>
-							</table>
-						</div>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Miércoles 30/11</em></span>
+										</td>
+										<td>Grupo D</td>
+										<td><strong>Túnez 1</strong> - Francia 0</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo D</td>
+										<td><strong>Australia 1</strong> - Dinamarca 0</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo C</td>
+										<td>Polonia 0 - <strong>Argentina 2</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo C</td>
+										<td>Arabia Saudita 1- <strong>México 2</strong></td>
+									</tr>
 
-						<div class="group-stage">
-							<table>
-								<caption>Fase de grupos</em></caption>
-								<tr>
-									<th>Fecha</th>
-									<th>Grupo</th>
-									<th>Esquipo vs Equipo</th>
-								</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Martes 29/11</em></span>
+										</td>
+										<td>Grupo A</td>
+										<td>Ecuador 1 - <strong>Senegal 2</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo A</td>
+										<td><strong>Paises Bajos 2</strong> - Catar 0</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo B</td>
+										<td>Irán 0 - <strong>Estados Unidos 1</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo B</td>
+										<td>Gales 0 - <strong>Inglaterra 3</strong></td>
+									</tr>
 
-								<tr>
-									<td>Viernes 2/12</td>
-									<td>Grupo H</td>
-									<td>Corea del Sur - Portugal</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo H</td>
-									<td>Ghana - Uruguay</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo G</td>
-									<td>Serbia - Suiza</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo G</td>
-									<td>Camerún - Brasil</td>
-								</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Lunes 28/11</em></span>
+										</td>
+										<td>Grupo G</td>
+										<td>Camerún 3 - Serbia 3</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo H</td>
+										<td>Corea del sur 2 - Ghana 3</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo G</td>
+										<td>Brasil 0 - Suiza 0</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo H</td>
+										<td><strong>Portugal 2</strong> - Uruguay 0</td>
+									</tr>
 
-								<tr>
-									<td>Jueves 1/12</td>
-									<td>Grupo F</td>
-									<td>Croacia - Bélgica</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo F</td>
-									<td>Canadá - Marruecos</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo E</td>
-									<td>España - Japón</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo E</td>
-									<td>Costa Rica - Alemania</td>
-								</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Domingo 27/11</em></span>
+										</td>
+										<td>Grupo E</td>
+										<td>Japón 0 - <strong>Costa Rica 1</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo F</td>
+										<td>Bélgica 0 - <strong>Marruecos 2</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo F</td>
+										<td><strong>Croacia 4</strong> - Canadá 1</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo E</td>
+										<td>España 1 - Alemania 1</td>
+									</tr>
 
-								<tr>
-									<td>Miercoles 30/11</td>
-									<td>Grupo D</td>
-									<td>Túnez - Francia</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo D</td>
-									<td>Australia - Dinamarca</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo C</td>
-									<td>Polonia - Argentina</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo C</td>
-									<td>Arabia Saudita - México</td>
-								</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Sábado 26/11</em></span>
+										</td>
+										<td>Grupo D</td>
+										<td>Túnez 0 - <strong>Australia 1</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo C</td>
+										<td><strong>Polonia 2</strong> - Arabia Saudita 0</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo D</td>
+										<td><strong>Francia 2</strong> - Dinamarca 1</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo C</td>
+										<td><strong>Argentina 2</strong> - México 0</td>
+									</tr>
 
-								<tr>
-									<td>Martes 29/11</td>
-									<td>Grupo A</td>
-									<td>Ecuador - Senegal</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo A</td>
-									<td>Paises Bajos - Catar</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo B</td>
-									<td>Irán - Estados Unidos</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo B</td>
-									<td>Gales - Inglaterra</td>
-								</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Viernes 25/11</em></span>
+										</td>
+										<td>Grupo B</td>
+										<td>Gales 0 - <strong>Irán 2</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo A</td>
+										<td>Catar 1 - <strong>Senegal 3</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo A</td>
+										<td>Paises Bajos 1 - Ecuador 1</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo B</td>
+										<td>Inglaterra 0 - Estados Unidos 0</td>
+									</tr>
 
-								<tr>
-									<td>Lunes 28/11</td>
-									<td>Grupo G</td>
-									<td>Camerún 3 - Serbia 3</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo H</td>
-									<td>Corea del sur 2 - Ghana 3</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo G</td>
-									<td>Brasil 0 - Suiza 0</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo H</td>
-									<td>Portugal - Uruguay</td>
-								</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Jueves 24/11</em></span>
+										</td>
+										<td>Grupo G</td>
+										<td><strong>Suiza 1</strong> - Camerún 0</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo H</td>
+										<td>Uruguay 0 - Corea del Sur 0</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo G</td>
+										<td><strong>Brasil 2</strong> - Serbia 0</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo H</td>
+										<td><strong>Portugal 3</strong> - Ghana 2</td>
+									</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Miércoles 23/11</em></span>
+										</td>
+										<td>Grupo F</td>
+										<td>Marruecos 0 - Croacia 0</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo E</td>
+										<td>Alemania 1 - <strong>Japón 2</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo E</td>
+										<td><strong>España 7</strong> - Costa Rica 0</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo F</td>
+										<td><strong>Bélgica 1</strong> - Canadá 0</td>
+									</tr>
 
-								<tr>
-									<td>Domingo 27/11</td>
-									<td>Grupo E</td>
-									<td>Japón 0 - Costa Rica 1</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo F</td>
-									<td>Bélgica 0 - Marruecos 2</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo F</td>
-									<td>Croacia 4 - Canadá 1</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo E</td>
-									<td>España 1 - Alemania 1</td>
-								</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Martes 22/11</em></span>
+										</td>
+										<td>Grupo C</td>
+										<td>Argentina 1 - <strong>Arabia Saudita 2</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo D</td>
+										<td>Dinamarca 0 - Tunez 0</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo C</td>
+										<td>México 0 - Polonia 0</td>
+									</tr>
 
-								<tr>
-									<td>Sábado 26/11</td>
-									<td>Grupo D</td>
-									<td>Túnez 0 - Australia 1</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo C</td>
-									<td>Polonia 2 - Arabia Saudita 0</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo D</td>
-									<td>Francia 2 - Dinamarca 1</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo C</td>
-									<td>Argentina 2 - México 0</td>
-								</tr>
+									<tr>
+										<td></td>
+										<td>Grupo D</td>
+										<td><strong>Francia 4</strong> - Australia 1</td>
+									</tr>
 
-								<tr>
-									<td>Viernes 25/11</td>
-									<td>Grupo B</td>
-									<td>Gales 0 - Irán 2</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo A</td>
-									<td>Catar 1 - Senegal 3</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo A</td>
-									<td>Paises Bajos 1 - Ecuador 1</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo B</td>
-									<td>Inglaterra 0 - Estados Unidos 0</td>
-								</tr>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Lunes 21/11</em></span>
+										</td>
+										<td>Grupo B</td>
+										<td><strong>Inglaterra 6</strong> - Irán 2</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo A</td>
+										<td>Senegal 0 - <strong>Paises Bajos 2</strong></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>Grupo B</td>
+										<td>Estados Unidos 1 - Gales 1</td>
+									</tr>
 
-								<tr>
-									<td>Jueves 24/11</td>
-									<td>Grupo G</td>
-									<td>Suiza 1 - Camerún 0</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo H</td>
-									<td>Uruguay 0 - Corea del Sur 0</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo H</td>
-									<td>Brasil 2 - Serbia 0</td>
-								</tr>
-
-								<tr>
-									<td>Miercoles 23/11</td>
-									<td>Grupo F</td>
-									<td>Marruecos 0 - Croacia 0</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo E</td>
-									<td>Alemania 1 - Japón 2</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo E</td>
-									<td>España 7 - Costa Rica 0</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo F</td>
-									<td>Bélgica 1 - Canadá 0</td>
-								</tr>
-
-								<tr>
-									<td>Martes 22/11</td>
-									<td>Grupo C</td>
-									<td>Argentina 1 - Arabia Saudita 2</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo D</td>
-									<td>Dinamarca 0 - Tunez 0</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo C</td>
-									<td>México 0 - Polonia 0</td>
-								</tr>
-
-								<tr>
-									<td></td>
-									<td>Grupo D</td>
-									<td>Francia 4 - Australia 1</td>
-								</tr>
-
-								<tr>
-									<td>Lunes 21/11</td>
-									<td>Grupo B</td>
-									<td>Inglaterra 6 - Irán 2</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo A</td>
-									<td>Senegal 0 - Paises Bajos 2</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Grupo B</td>
-									<td>Estados Unidos 1 - Gales 1</td>
-								</tr>
-
-								<tr>
-									<td>Domingo 20/11</td>
-									<td>Grupo A</td>
-									<td>Catar 0 - Ecuador 2</td>
-								</tr>
-							</table>
+									<tr>
+										<td class="col-date">
+											<span class="date-result"><em>Domingo 20/11</em></span>
+										</td>
+										<td>Grupo A</td>
+										<td>Catar 0 - <strong>Ecuador 2</strong></td>
+									</tr>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>   
-			<div class="footer">
-				<span><i class="fa-regular fa-copyright"></i> DIARIO Partido a Partido, S.L.- Libertad 25 - 41940 Sevilla [España] - Designed by MRP</span>
+				<div class="footer">
+					<span><i class="fa-regular fa-copyright"></i> DIARIO Partido a Partido, S.L.- Libertad 25 - 41940 Sevilla [España] - Designed by MRP</span>
+				</div>
 			</div>
 		</div>
 	</body>
