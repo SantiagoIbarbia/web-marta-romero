@@ -293,6 +293,10 @@ tr {
     font-size: xx-large;
 }
 
+.row{
+    padding: 15px;
+}
+
 .sports {
     margin-top: 40px;
 }
@@ -426,7 +430,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
     width: 70%;
 }
 
-.buttons-box{
+.buttons-box {
     margin: 20px;
     padding: 10px;
     font-size: 20px;
@@ -528,7 +532,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 }
 
 .welcome-image {
-    width: 50%;
+    width: 40%;
     border-radius: 50%;
     margin: 5%;
 }
